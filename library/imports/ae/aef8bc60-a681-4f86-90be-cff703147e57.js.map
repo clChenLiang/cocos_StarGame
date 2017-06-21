@@ -1,0 +1,44 @@
+{
+  "version": 3,
+  "sources": [
+    "unknown"
+  ],
+  "names": [
+    "cc",
+    "Class",
+    "extends",
+    "Component",
+    "properties",
+    "pickRadius",
+    "game",
+    "default",
+    "serializable",
+    "onLoad",
+    "getPlayerDistance",
+    "playerPos",
+    "player",
+    "getPosition",
+    "dist",
+    "pDistance",
+    "node",
+    "position",
+    "onPicked",
+    "spawnNewStar",
+    "gainScore",
+    "destroy",
+    "update",
+    "dt",
+    "opacityRatio",
+    "timer",
+    "starDuration",
+    "minOpacity",
+    "opacity",
+    "Math",
+    "floor"
+  ],
+  "mappings": ";;AAAAA,GAAGC,KAAH,CAAS;AACLC,aAASF,GAAGG,SADP;;AAGLC,gBAAY;AACTC,oBAAW,CADF;AAERC,cAAM;AACFC,qBAAS,IADP;AAEFC,0BAAc;AAFZ;AAFE,KAHP;;AAWL;AACAC,YAAQ,kBAAY,CAEnB,CAdI;AAeLC,uBAAkB,6BAAU;AACxB,YAAIC,YAAY,KAAKL,IAAL,CAAUM,MAAV,CAAiBC,WAAjB,EAAhB;AACA,YAAIC,OAAOd,GAAGe,SAAH,CAAa,KAAKC,IAAL,CAAUC,QAAvB,EAAgCN,SAAhC,CAAX;AACA;AACA,eAAOG,IAAP;AACH,KApBI;AAqBLI,cAAS,oBAAU;AACf,aAAKZ,IAAL,CAAUa,YAAV;AACA,aAAKb,IAAL,CAAUc,SAAV;AACA,aAAKJ,IAAL,CAAUK,OAAV;AACH,KAzBI;AA0BL;AACAC,YAAQ,gBAAUC,EAAV,EAAc;AAClB;AACA,YAAG,KAAKb,iBAAL,KAA2B,KAAKL,UAAnC,EAA+C;AAC3C;AACA,iBAAKa,QAAL;AACA;AACH;;AAED,YAAIM,eAAe,IAAI,KAAKlB,IAAL,CAAUmB,KAAV,GAAgB,KAAKnB,IAAL,CAAUoB,YAAjD;;AAEA,YAAIC,aAAa,EAAjB;AACA,aAAKX,IAAL,CAAUY,OAAV,GAAoBD,aAAaE,KAAKC,KAAL,CAAWN,gBAAc,MAAMG,UAApB,CAAX,CAAjC;AACA;AACH;AAxCI,CAAT",
+  "file": "unknown",
+  "sourcesContent": [
+    "cc.Class({\r\n    extends: cc.Component,\r\n\r\n    properties: {\r\n       pickRadius:0,\r\n        game: {\r\n            default: null,\r\n            serializable: false\r\n        }\r\n    },\r\n\r\n    // use this for initialization\r\n    onLoad: function () {\r\n\r\n    },\r\n    getPlayerDistance:function(){\r\n        var playerPos = this.game.player.getPosition();\r\n        var dist = cc.pDistance(this.node.position,playerPos);\r\n        // console.log(dist);aaaaa\r\n        return dist;\r\n    },\r\n    onPicked:function(){\r\n        this.game.spawnNewStar();\r\n        this.game.gainScore();\r\n        this.node.destroy();\r\n    },\r\n    // called every frame, uncomment this function to activate update callback\r\n    update: function (dt) {\r\n        // console.log(\"update once\");\r\n        if(this.getPlayerDistance() < this.pickRadius ){\r\n            // console.log(\"picked by player\");\r\n            this.onPicked();\r\n            return ;\r\n        }\r\n        \r\n        var opacityRatio = 1 - this.game.timer/this.game.starDuration;\r\n        \r\n        var minOpacity = 50;\r\n        this.node.opacity = minOpacity + Math.floor(opacityRatio*(255 - minOpacity));\r\n        // console.log(\"opacityRatio:\",this.game.starDuration  ,this.node.opacity);\r\n    },\r\n});\r\n"
+  ]
+}

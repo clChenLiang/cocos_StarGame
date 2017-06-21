@@ -1,0 +1,58 @@
+2017-06-21T06:45:28.359Z - normal: Load ~/.CocosCreator/settings.json
+2017-06-21T06:45:28.362Z - normal: checking language setting...
+2017-06-21T06:45:28.362Z - normal: Language: zh
+2017-06-21T06:45:29.742Z - success: protocol editor-framework registered
+2017-06-21T06:45:29.742Z - success: protocol app registered
+2017-06-21T06:45:29.743Z - success: protocol theme registered
+2017-06-21T06:45:29.743Z - success: protocol profile registered
+2017-06-21T06:45:29.743Z - success: protocol packages registered
+2017-06-21T06:45:29.743Z - success: protocol unpack registerred
+2017-06-21T06:45:29.743Z - success: protocol disable-commonjs registerred
+2017-06-21T06:45:29.968Z - normal: connected!
+2017-06-21T06:45:29.979Z - normal: Check project E:\code\start_project2\start_project
+2017-06-21T06:45:29.983Z - normal: Initializing Cocos2d
+2017-06-21T06:45:30.157Z - normal: Initializing Asset Database
+2017-06-21T06:45:30.203Z - success: protocol uuid registerred
+2017-06-21T06:45:30.203Z - success: protocol db registerred
+2017-06-21T06:45:30.203Z - success: protocol thumbnail registerred
+2017-06-21T06:45:30.203Z - normal: Loading editor/builtin packages
+2017-06-21T06:45:30.306Z - success: assets loaded
+2017-06-21T06:45:30.308Z - success: builder loaded
+2017-06-21T06:45:30.310Z - success: hierarchy loaded
+2017-06-21T06:45:30.313Z - success: inspector loaded
+2017-06-21T06:45:30.314Z - success: keystore loaded
+2017-06-21T06:45:30.315Z - success: node-library loaded
+2017-06-21T06:45:30.317Z - success: preferences loaded
+2017-06-21T06:45:30.327Z - success: project-importer loaded
+2017-06-21T06:45:30.329Z - success: project-settings loaded
+2017-06-21T06:45:30.330Z - success: ui-kit loaded
+2017-06-21T06:45:30.331Z - success: ui-grid loaded
+2017-06-21T06:45:30.333Z - success: scene loaded
+2017-06-21T06:45:30.335Z - success: sprite-editor loaded
+2017-06-21T06:45:30.365Z - success: store loaded
+2017-06-21T06:45:30.369Z - success: timeline loaded
+2017-06-21T06:45:30.369Z - normal: Loading builtin packages
+2017-06-21T06:45:30.371Z - success: anysdk loaded
+2017-06-21T06:45:30.372Z - success: asset-db-debugger loaded
+2017-06-21T06:45:30.374Z - success: code-editor loaded
+2017-06-21T06:45:30.374Z - success: color-picker loaded
+2017-06-21T06:45:30.376Z - success: console loaded
+2017-06-21T06:45:30.377Z - success: package-manager loaded
+2017-06-21T06:45:30.379Z - success: tester loaded
+2017-06-21T06:45:30.380Z - success: ui-kit-preview-extra loaded
+2017-06-21T06:45:30.381Z - success: ui-kit-preview loaded
+2017-06-21T06:45:30.383Z - success: ui-tree loaded
+2017-06-21T06:45:30.421Z - normal: Initializing project E:\code\start_project2\start_project
+2017-06-21T06:45:30.423Z - normal: Loading packages
+2017-06-21T06:45:30.426Z - normal: Watching packages
+2017-06-21T06:45:30.438Z - normal: Run Application
+2017-06-21T06:45:30.925Z - success: preview server running at http://localhost:7457
+2017-06-21T06:45:32.345Z - error: TypeError: Path must be a string. Received undefined
+    at assertPath (path.js:7:11)
+    at Object.extname (path.js:889:5)
+    at new CodeEditor (C:\CocosCreator\resources\app.asar\builtin\code-editor\panel\editor.js:74:27)
+    at HTMLDocument.document.addEventListener (file:///C:/CocosCreator/resources/app.asar/builtin/code-editor/panel/page.js:162:18)
+2017-06-21T06:45:33.609Z - normal: 1.4.2
+2017-06-21T06:46:49.719Z - error: TypeError: Cannot read property 'aceEditor' of null
+    at _confirmClose (file:///C:/CocosCreator/resources/app.asar/builtin/code-editor/panel/page.js:19:28)
+    at window.addEventListener.event (file:///C:/CocosCreator/resources/app.asar/builtin/code-editor/panel/page.js:172:15)
